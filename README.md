@@ -30,6 +30,6 @@ Use jupyter notebook under a python enviroment with all required libs
 ```
 $ jupyter notebook
 ```
-Open demo.ipynb to test its performance. 
+Open ***demo_webcamera*** to test its performance. 
 
 
