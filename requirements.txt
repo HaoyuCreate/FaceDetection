@@ -1,0 +1,5 @@
+opencv-python
+dlib==19.22.1
+mediapipe==0.8.3
+numpy==1.19.3
+jupyter==1.0.0
