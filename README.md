@@ -18,13 +18,13 @@ This project, based on Python, is trying to detect human faces with classical 68
 ### Results
 Detection results on images:
 Face_detected in the crowed
-<img src="https://github.com/HaoyuCreate/FaceDetection/output/crowd_detected.jpg" width="25%">
+<img src="output/crowd_detected.jpg" width="25%">
 
 Face_detected with occlusion
-<img src="https://github.com/HaoyuCreate/FaceDetection/output/occlusion_detected.jpg" width="25%">
+<img src="output/occlusion_detected.jpg" width="25%">
 
 
-Detection results on videos:
+Detection results on [videos](output/head-pose-face-detection-female-and-male_detected.avi):
 <video src="https://github.com/HaoyuCreate/FaceDetection/output/head-pose-face-detection-female-and-male_detected.avi" width="50%" height="50%">
 
 ### Used Python packages
