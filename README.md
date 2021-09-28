@@ -3,7 +3,7 @@ This project, based on Python, is trying to detect human faces with classical 68
 
 ### Aditional Questions:
 - If the head goes out of focus and comes back in, will your algorithm start tracking again?
-  > Yes, the algorithm would not stop when users go out of the view.
+  > Yes, the algorithm would not stop when users go out of the view and it continues to work when users come back.
 - How are you prioritizing tracking for objects in focus?
   > I calculated distance bettween the focus area (assumed as image center) and all detected faces. Since faces may move in the video, so the algorithm alter the object in focus and keep tracking the object that get nearest to the facus area. 
 - Are you able to track with foreign objects like headphones, spectacles, etc?
@@ -11,6 +11,16 @@ This project, based on Python, is trying to detect human faces with classical 68
 - If there is occlusion (example: if someone is drinking from a bottle) will the tracking stop?
   > No, the algorithm does not stop when it can not detect human face in current frame. It might fail to find the faces temporarily and give no predition but will continue to track the faces whenever it can again. 
 - Anything else that you think will be important for a real-world application but might not have been mentioned above. Explain why it is important.
+  > Efficiency. In this project, it is efficiency that is of importancein real-world applications from my personal view. Before developing current algorithm, I also tried another DNN-based SSD-structure algorithm to detect human faces (code in the develop branch under this repo). Although it has a relative high accuracy on human face detection, it is a little bit slow in simultaneous tracking when using high-resolution web-camera. 
+  > Conviniency. This project combines three main tasks together: 1) human face datetion; 2) landmarks detection; 3) head pose estimation. There are learned-based algorithms to couple with each of the tasks but is few to solve the combined mission. It is feasible to use three independed DNN to sequencially solve the three tasks, but this solution requires huge computation resources. Another solution is using a single DNN which are trained on a combined dataset in an end-to-end manner. But this solution needs to construct a dataset which has ground truth for all tasks.
+
+### Results
+Detection results on images:
+[Face_detected in the crowed](output/crowd_detected.jpg)
+[Face_detected with occlusion](output/occlusion_detected.jpg)
+
+Detection results on videos:
+[Man and woman](output/head-pose-face-detection-female-and-male_detected.avi)
 
 ### Used Python packages
 + opencv-python
@@ -43,6 +53,4 @@ $ jupyter notebook
 ```
 Open ***demo_webcamera,ipynb*** to test its performance. 
 
-
-### Results
 
