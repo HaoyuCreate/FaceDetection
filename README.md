@@ -17,11 +17,15 @@ This project, based on Python, is trying to detect human faces with classical 68
 
 ### Results
 Detection results on images:
-[Face_detected in the crowed](output/crowd_detected.jpg)
-[Face_detected with occlusion](output/occlusion_detected.jpg)
+Face_detected in the crowed
+<img src="https://github.com/HaoyuCreate/FaceDetection/tree/main/output/crowd_detected.jpg" width="50%">
+
+Face_detected with occlusion
+<img src="https://github.com/HaoyuCreate/FaceDetection/tree/main/output/occlusion_detected.jpg" width="50%">
+
 
 Detection results on videos:
-[Man and woman](output/head-pose-face-detection-female-and-male_detected.avi)
+<video src="https://github.com/HaoyuCreate/FaceDetection/tree/main/output/head-pose-face-detection-female-and-male_detected.avi" width="50%">
 
 ### Used Python packages
 + opencv-python
@@ -52,6 +56,6 @@ Use jupyter notebook under a python enviroment with all required libs
 ```
 $ jupyter notebook
 ```
-Open ***demo_webcamera,ipynb*** to test its performance. 
+Open ***demo_webcamera.ipynb*** to test its performance. 
 
 
