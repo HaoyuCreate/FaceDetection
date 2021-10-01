@@ -4,11 +4,6 @@
 ### We open source all the popular deep learning frameworks' model and inference code to do face mask detection.
 
 - [x] PyTorch
-- [x] TensorFlow（include tflite and pb model）
-- [x] Keras
-- [x] MXNet
-- [x] Caffe
-- [x] Paddle
 - [x] OpenCV dnn
 
 
@@ -77,16 +72,6 @@ if you want to use tensorflow, just run:
 python tensorflow_infer.py  --img-path /path/to/your/img
 ```
 **Attention，for caffe's inference ，we use permute layer，so that we should use [caffe-ssd](https://github.com/weiliu89/caffe/tree/ssd)**，you can use opencv-dnn to do the inference.
-## Appendix
-### Feedback
-If you use wechat, you can follow us.
-
-![](img/wx.png)
-
-** If you use Wechat, scan the code to add  me on wechat **
-
-![](img/author.jpg)
-
 
 ### Model structure
 
